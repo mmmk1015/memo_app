@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <div id="stalker"></div>
+
+    <header>
+        <h1>やることリスト</h1>
+    </header>
+
+    <div class="wrap">
+        <form>
+            <a class="input"><!--<input type="date" name="limit" class="todo-input">-->
+                <input type="text" class="todo-input" placeholder="やらなあかんこと！"><button class="todo-button"
+                    type="submit">
+                    <img src="img/plus.png" class="fas fa-plus-square"></button></a>
+
+            <div class="select">
+                <a><select name="todos" class="filter-todo">
+                        <option value="all">全て</option>
+                        <option value="completed">完了</option>
+                        <option value="uncompleted">まだ</option>
+                    </select></a>
+            </div>
+        </form>
+
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="todo.js"></script>
+
+</html>
